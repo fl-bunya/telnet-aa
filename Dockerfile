@@ -10,7 +10,8 @@ RUN pip3 install gif-for-cli
 
 COPY service /etc/xinetd.d/
 
-EXPOSE 12345
+EXPOSE 23
+EXPOSE 808
 
 CMD ["/usr/sbin/xinetd", "-dontfork"]
 # ENTRYPOINT ["tail", "-F", "/dev/null"]
