@@ -1,0 +1,21 @@
+service aa
+{
+  type            = UNLISTED
+  port            = 23
+  socket_type     = stream
+  protocol        = tcp
+  wait            = no
+  user            = root
+  server          = /root/bin/aa.sh
+}
+
+service myHttp
+{
+  type            = UNLISTED
+  port            = 808
+  socket_type     = stream
+  protocol        = tcp
+  wait            = no
+  user            = root
+  server          = /root/bin/myHttp.sh
+}
